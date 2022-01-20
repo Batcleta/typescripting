@@ -164,3 +164,4 @@ let correntista = {
 };
 correntista.contaBancaria.depositar(3000);
 console.log(correntista);
+//# sourceMappingURL=basico.js.map

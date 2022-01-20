@@ -27,3 +27,33 @@ console.log(nome)
 
 nome="Aderbaldo"
 console.log(nome)
+
+
+// "sourceMap": true
+
+// "noImplicitAny": true
+
+function soma(a: any, b: any): any{
+    return a +b 
+}
+
+let qualquerCoisa
+qualquerCoisa = 12
+qualquerCoisa = 'abc'
+
+// "strictNullChecks": true,  retorna um erro quando verifica um nulo indesejado
+
+function saudar(isManha: boolean){
+    let saudacao: string
+    if(isManha)  saudacao = 'Bom dia'
+    else  saudacao = 'Boa vida'
+    return saudacao
+}
+
+console.log(saudar(true))
+
+// "noUnusedLocals": true,          // reclama quando nao usa uma variável no código
+// "noUnusedParameters": true,      // reclama quando um parametro nao é utilizado
+
+
+// "outDir": "./" - auto explicativo
