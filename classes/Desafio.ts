@@ -56,7 +56,7 @@ class Moto{
     }
 }
 
-let moto1 = new Moto('Ducatti')
+const moto1 = new Moto('Ducatti')
 console.log(moto1.acelerar())
 console.log(moto1.acelerar())
 console.log(moto1.acelerar())
@@ -84,16 +84,16 @@ console.log(`Freiar: ${moto1.freiar(15)}`)
 
 abstract class Objeto2D{
    protected constructor(protected _base: number = 0, protected _altura: number = 0){}
+   
+   public area():number{
+    return this._base * this._altura
+}
 }
 
 class Retangulo extends Objeto2D {
 
     constructor( _base: number = 0,  _altura: number = 0){
         super()
-    }
-
-    area():number{
-        return this._base * this._altura
     }
 
     set altura (altura: number){

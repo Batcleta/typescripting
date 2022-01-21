@@ -46,7 +46,7 @@ class Moto {
         return this._velocidade;
     }
 }
-let moto1 = new Moto('Ducatti');
+const moto1 = new Moto('Ducatti');
 console.log(moto1.acelerar());
 console.log(moto1.acelerar());
 console.log(moto1.acelerar());
@@ -69,13 +69,13 @@ class Objeto2D {
         this._base = _base;
         this._altura = _altura;
     }
+    area() {
+        return this._base * this._altura;
+    }
 }
 class Retangulo extends Objeto2D {
     constructor(_base = 0, _altura = 0) {
         super();
-    }
-    area() {
-        return this._base * this._altura;
     }
     set altura(altura) {
         this._altura = altura;
